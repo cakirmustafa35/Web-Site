@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&display=swap');
+
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+@media (min-width: 880px) {
+    .blog {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+        padding-left: 3rem;
+    }
+}
+@media (max-width: 880px) {
+    .box-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .blog {
+        padding-left: 3rem;
+        position: relative;
+        display: flex;
+    }
+}
+
+body {
+    height: 100vh;
+}
+
+#navbarNav {
+    justify-content: end;
+    text-align: center;
+}
+
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header {
+    background-image: url('../img/bg-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.main-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header * {
+    z-index: 1000;
+}
+
+.main-header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.main-header .content p {
+    width: 60%;
+}
+
+.products .container {
+    padding-top: 2rem;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+
+.collapse a {
+    border-bottom: 0.1rem solid transparent;
+}
+.collapse .active,
+.collapse a:hover {
+    border-color: gold;
+    padding-bottom: 0.2rem;
+}
+
+
+/*------------------------------------------------------------*/ 
+
+
+
+.blog .box-container {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.blog .box-container .box  {
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 3rem;
+    height: 30.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blog .box-container .box .image {
+    height: 20rem;
+    width: 95%;
+    overflow: hidden;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+.blog .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.blog .box-container .box:hover .image img {
+    transform: scale(1.1);
+    transition: transform 0.8s;
+}
+.blog .box-container .box .content {
+    width: 95%;
+    height: 10rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: gold;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+.blog .box-container .box .content span {        /* BY ADMIN.... text */
+    display: block;
+    font-size: 1rem;
+    color: black;
+}
+.blog .box-container .box .content .title {    /*How to make... text */
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    font: bold;
+}
+.blog .box-container .box .content p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-style: italic;
+    color: rgb(145, 139, 139);
+}
+
+
+/*-------------- BLOG.HTML -----------------*/
+
+.blog-header {
+    background-image: url('../img/bg-2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: #fff;
+    position: relative;
+}
+
+.blog-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.blog-header * {
+    z-index: 1000;
+}
+
+.blog-header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
